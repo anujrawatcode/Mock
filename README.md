@@ -32,7 +32,7 @@ Source : [SDE-Sheet TUF](https://leetcode.com/problems/intersection-of-two-linke
 14. Clone a Linked List with random and next pointer
 
 
-SRC : [A-2-Z Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) 
+Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) 
 
 16. Add 1 to a number represented by LL
 
@@ -49,6 +49,27 @@ SRC : [A-2-Z Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-t
 22. Length of Loop in LL
 
 23. Find the starting point in LL
+
+Source : [CISCO](https://leetcode.com/discuss/post/6638137/cisco-oa-linked-list-all-by-anujcodez-ok6u/)
+
+24. Filteration
+
+25. Delete Node greater than X
+
+26. Condensed List
+
+Source : [Sheet](https://leetcode.com/discuss/post/6638137/cisco-oa-linked-list-all-by-anujcodez-ok6u/)
+
+27. Design Linked List
+
+Source : Interviews
+
+28. [Linked List Node Swap](https://leetcode.com/discuss/post/957892/amazon-round-1-interview-linkedlist-node-uw1o/)
+
+29. [Maximum Twin Sum of a Linked List](https://leetcode.com/discuss/post/2024323/amazon-oa-sum-of-subarray-linkedlist-by-99dti/)
+
+30. [Sorted Linked List to complete BST](https://leetcode.com/discuss/post/2682309/intuit-online-sorted-linked-list-to-comp-d4bu/)
+
 
 
 
