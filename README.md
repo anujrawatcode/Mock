@@ -2,7 +2,7 @@
 
 ### Linked List
 
-Source : [SDE-Sheet TUF](https://leetcode.com/problems/intersection-of-two-linked-lists/) 
+Source : [SDE-Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) 
 1. Reverse a LinkedList (Iterative/Recursive)
      
 2. Find the middle of LinkedList
@@ -32,7 +32,7 @@ Source : [SDE-Sheet TUF](https://leetcode.com/problems/intersection-of-two-linke
 14. Clone a Linked List with random and next pointer
 
 
-Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) 
+Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2) 
 
 16. Add 1 to a number represented by LL
 
