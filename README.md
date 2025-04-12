@@ -42,13 +42,13 @@ Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/strivers-a2z-dsa-course/stri
 
 19. Delete the middle node of LL
 
-20. Remove Nth node from the back of the LL
+20. Remove Nth node from the back of the LL (repeat)
 
 21. Segrregate odd and even nodes in LL
 
 22. Length of Loop in LL
 
-23. Find the starting point in LL
+23. Find the starting point of loop in LL
 
 Source : [CISCO](https://leetcode.com/discuss/post/6638137/cisco-oa-linked-list-all-by-anujcodez-ok6u/)
 
