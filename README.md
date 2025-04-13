@@ -34,21 +34,21 @@ Source : [SDE-Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-
 
 Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2) 
 
-16. Add 1 to a number represented by LL
+16. [Add 1 to a number represented by LL](https://www.naukri.com/code360/problems/add-one-to-linked-list_920557?leftPanelTabValue=PROBLEM)
 
-17. Sort a LL of 0's 1's and 2's by changing links
+17. [Sort a LL of 0's 1's and 2's by changing links](https://www.naukri.com/code360/problems/sort-linked-list-of-0s-1s-2s_1071937)
 
 18. Sort LL
 
-19. Delete the middle node of LL
+19. [Delete the middle node of LL](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
 
-20. Remove Nth node from the back of the LL (repeat)
+20. [Remove Nth node from the back of the LL (repeat)](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 21. Segrregate odd and even nodes in LL
 
 22. Length of Loop in LL
 
-23. Find the starting point of loop in LL
+23. Find the starting point of loop in LL(repeat)
 
 Source : [CISCO](https://leetcode.com/discuss/post/6638137/cisco-oa-linked-list-all-by-anujcodez-ok6u/)
 
