@@ -46,7 +46,7 @@ Sourse : [A-2-Z Sheet TUF](https://takeuforward.org/strivers-a2z-dsa-course/stri
 
 21. Segrregate odd and even nodes in LL
 
-22. Length of Loop in LL
+22. [Length of Loop in LL](https://www.naukri.com/code360/problems/find-length-of-loop_8160455)
 
 23. Find the starting point of loop in LL(repeat)
 
