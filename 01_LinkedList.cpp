@@ -1,4 +1,222 @@
 /* ********************************************************************
+01. Reverse a LinkedList in groups of size k.
+*********************************************************************** */
+ListNode* reverseList(ListNode* head) {
+        
+    ListNode* newHead = NULL; //Declare
+
+    while(head) { // Logic
+
+        ListNode* temp = head->next; // Declare
+
+        head->next = newHead;
+        newHead = head;
+        head = temp;
+    }
+
+    return newHead; // return newHead
+}
+
+/* ********************************************************************
+02. Find the middle of LinkedList
+*********************************************************************** */
+
+
+/*      Brute will be O(2N)
+                                    f
+        1 -> 2 -> 3 -> 4 -> 5 ->6
+                       s
+    */
+ListNode* middleNode(ListNode* head) {
+        
+    ListNode* slow = head;
+    ListNode* fast = head;
+
+    while(fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+
+    return slow;
+}
+
+/* ********************************************************************
+03. Merge two sorted Linked List
+*********************************************************************** */
+ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        
+    // Base case 
+    if(!list1) return list2;
+    if(!list2) return list1;
+
+    // Decleration
+    ListNode *head,
+             *l1,
+             *l2;
+    
+    //Initial Setup
+    if(list1->val < list2->val) {
+        head = list1;
+        l1 = list1;
+        l2 = list2;
+    } 
+    else { // (list1->val >= list2->val)
+        head = list2;
+        l1 = list2;
+        l2 = list1;
+    }
+    
+
+    //logic
+    while(l1 && l2) 
+    {
+        ListNode* tmp = NULL;
+
+        while(l1 && l1->val <= l2->val) {
+            tmp = l1;
+            l1 = l1->next;
+        }    
+
+        tmp->next = l2;
+        swap(l1, l2);
+    }
+
+    // return val
+    return head;
+}
+
+
+/* ********************************************************************
+4. Remove N-th node from back of LinkedList
+*********************************************************************** */
+ListNode* removeNthFromEnd(ListNode* head, int n) {
+        
+    // Inital Setup
+    ListNode* start = new ListNode();
+    start->next = head;
+
+    //declare
+    ListNode* fast = start;
+    ListNode* slow = start;
+
+    //logic
+    for(int i=1; i<=n; i++)
+        fast = fast->next;
+    
+    while(fast->next){
+        slow = slow->next;
+        fast = fast->next;
+    }
+
+    //join
+    slow->next = slow->next->next;
+    //return
+    return start->next;
+}
+
+/* ********************************************************************
+5. Add two numbers as LinkedList
+*********************************************************************** */
+
+/*
+        4 -> 5 -> 6
+        9 -> 5 -> 7 -> 5
+    cry 0    1    1    1
+    sum 13   11.  14.  
+
+    dmy  3   1    4     6
+        tmp
+ */
+
+ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        
+    // Inital * Declare
+    ListNode* dummy = new ListNode(0);
+    ListNode* temp = dummy;
+    int carry = 0;
+
+    //logic 
+    while(l1 || l2 || carry) 
+    {   
+        // sum cal
+        int sum=0;
+        if(l1) {
+            sum += l1->val;
+            l1 = l1->next;
+        }
+        if(l2) {
+            sum += l2->val;
+            l2 = l2->next;
+        }
+        sum += carry;
+
+        // math correction
+        carry = sum / 10;
+
+        ListNode* node = new ListNode(sum%10);
+        temp->next = node;
+        temp = temp->next;
+
+    }
+
+    // return 
+    return dummy->next;   
+}
+
+/* ********************************************************************
+06. Delete Node in a Linked List
+*********************************************************************** */
+
+void deleteNode(ListNode* node) {
+    node->val = node->next->val;
+    node->next = node->next->next;
+}
+
+/* ********************************************************************
+07. Find intersection point of Y LinkedList
+*********************************************************************** */
+ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        
+    if(!headA || !headB)
+        return NULL;
+    
+    ListNode* a = headA;
+    ListNode* b = headB;
+
+    while(a!=b) 
+    {
+        a = (a==NULL) ? headB : a->next;
+        b = (b==NULL) ? headA : b->next;
+    }
+
+    return a;
+}
+
+/* ********************************************************************
+08. Detect a cycle in Linked List
+*********************************************************************** */
+
+bool hasCycle(ListNode *head) {
+        
+    //base 
+    if(head==NULL || head->next==NULL)
+        return false;
+    
+    ListNode* fast = head;
+    ListNode* slow = head;
+
+    while(fast->next && fast->next->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+
+        if(fast==slow)
+            return true;
+    }
+
+    return false;
+}
+
+/* ********************************************************************
 09. Reverse a LinkedList in groups of size k.
 *********************************************************************** */
 

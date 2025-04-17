@@ -3,21 +3,22 @@
 ### Linked List
 
 Source : [SDE-Sheet TUF](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) 
-1. Reverse a LinkedList (Iterative/Recursive)
+
+1. [Reverse a LinkedList](https://leetcode.com/problems/reverse-linked-list/)
      
-2. Find the middle of LinkedList
+2. [Find the middle of LinkedList](https://leetcode.com/problems/middle-of-the-linked-list/)
 
-3. Merge two sorted Linked List
+3. [Merge two sorted Linked List](https://leetcode.com/problems/merge-two-sorted-lists/description/)
 
-4. Remove N-th node from back of LinkedList
+4. [Remove N-th node from back of LinkedList](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
 
-5. Add two numbers as LinkedList
+5. [Add two numbers as LinkedList](https://leetcode.com/problems/add-two-numbers/)
 
-6. Delete a given Node when a node is given.
+6. [Delete a given Node when a node is given.](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
 
-7. Find intersection point of Y LinkedList
+7. [Find intersection point of Y LinkedList](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
 
-8. Detect a cycle in Linked List
+8. [Detect a cycle in Linked List](https://leetcode.com/problems/linked-list-cycle/description/)
 
 9. Reverse a LinkedList in groups of size k.
 
