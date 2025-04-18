@@ -73,7 +73,7 @@ Source : Interviews
 
 
 
-### Linked List
+### Graph
 
 1. [Clone a Graph]()
 
@@ -91,7 +91,7 @@ Source : Interviews
 
 8. [Topological Sort- DFS](https://www.geeksforgeeks.org/problems/topological-sort/0)
 
-9. [Topological Sort- BFS](https://www.geeksforgeeks.org/problems/topological-sort/0)
+9. [Topological Sort- BFS - Kahn](https://www.geeksforgeeks.org/problems/topological-sort/0)
 
 10. [No of Island](https://leetcode.com/problems/number-of-islands/description/)
 

@@ -395,17 +395,17 @@ class Solution {
 *********************************************************************** */
 // Intution: color array(-1)
 
-bool isBipart(int node,
-              int paint,
-              vector<int>& color,
-              vector<vector<int>>& graph) {
-    color[node] = paint;
+bool detect(int src,
+            int paint,
+            vector<int> &color,
+            vector<vector<int>> &graph) {
+    color[src] = paint;
 
-    for (auto adjNode : graph[node]) {
-        if (color[adjNode] == -1) {
-            if (isBipart(adjNode, 1 - paint, color, graph) == false)
+    for (auto adjNode : graph[src]) {
+        if (color[adjNode] == -1) { // un-visited adjNode
+            if (detect(adjNode, 1 - paint, color, graph) == false)
                 return false;
-        } else {
+        } else { // (color[adjNode] != -1)
             if (color[adjNode] == paint)
                 return false;
         }
@@ -414,16 +414,17 @@ bool isBipart(int node,
     return true;
 }
 
-
-bool isBipartite(vector<vector<int>>& graph) {
+bool isBipartite(vector<vector<int>> &graph) {
+    // Declare
     int V = graph.size();
-    vector<int> color(V, -1);
+    vector<int> color(V, -1); // also works as visit array
 
     for (int i = 0; i < V; i++) {
-        if (color[i] == -1) {
-            if (isBipart(i, 0, color, graph) == false)
+        if (color[i] == -1) { // component is un-visited
+            if (detect(i, 0, color, graph) == false)
                 return false;
         }
     }
+
     return true;
 }
