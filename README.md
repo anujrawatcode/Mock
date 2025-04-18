@@ -70,3 +70,31 @@ Source : Interviews
 29. [Maximum Twin Sum of a Linked List](https://leetcode.com/discuss/post/2024323/amazon-oa-sum-of-subarray-linkedlist-by-99dti/)
 
 30. [Sorted Linked List to complete BST](https://leetcode.com/discuss/post/2682309/intuit-online-sorted-linked-list-to-comp-d4bu/)
+
+
+
+### Linked List
+
+1. [Clone a Graph]()
+
+2. [DFS](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/0)
+
+3. [BFS](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
+
+4. [Undirected Graph Cycle - BFS](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/0)
+
+5. [Undirected Graph Cycle - DFS](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/0)
+
+6. [Directed Graph Cycle - DFS](https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
+
+7. [Directed Graph Cycle - BFS - Kahn](https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
+
+8. [Topological Sort- DFS](https://www.geeksforgeeks.org/problems/topological-sort/0)
+
+9. [Topological Sort- BFS](https://www.geeksforgeeks.org/problems/topological-sort/0)
+
+10. [No of Island](https://leetcode.com/problems/number-of-islands/description/)
+
+11. [Bipartite Graph](https://leetcode.com/problems/is-graph-bipartite/description/)
+
+

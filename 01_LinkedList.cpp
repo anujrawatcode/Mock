@@ -3,7 +3,7 @@
 *********************************************************************** */
 ListNode* reverseList(ListNode* head) {
         
-    ListNode* newHead = NULL; //Declare
+    ListNode* newHead = NULL; // Declare
 
     while(head) { // Logic
 
