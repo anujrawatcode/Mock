@@ -428,3 +428,226 @@ bool isBipartite(vector<vector<int>> &graph) {
 
     return true;
 }
+
+/* ********************************************************************
+12. SCC: Strongly Connected Component : Kosaraju
+*********************************************************************** */
+// Intution : Topo, Transpose, DFS
+
+
+int kosaraju(vector<vector<int>> &adj) {
+    int V = adj.size();
+
+    // Topo-sort
+    stack<int> stk;
+    vector<int> vis(V, 0);
+    for (int i = 0; i < V; i++) {
+        if (vis[i] == false) {
+            topo(i, stk, vis, adj);
+        }
+    }
+
+    // Transpose
+    vector<vector<int>> adjT(V);
+    for (int i = 0; i < V; i++) {
+        for (auto x : adj[i]) {
+            adjT[x].push_back(i);
+        }
+    }
+
+    // dfsTopo using stk
+    int cnt = 0;
+    vector<int> visi(V, 0);
+    while (!stk.empty()) {
+        int node = stk.top();
+        stk.pop();
+        if (visi[node] == false) {
+            cnt++;
+            dfsTopo(node, visi, adjT);
+        }
+    }
+
+    return cnt;
+}
+
+
+void topo(int src, 
+          stack<int> &stk, 
+          vector<int> &vis, 
+          vector<vector<int>> &adj) {
+    vis[src] = true;
+
+    for (auto adjNode : adj[src]) {
+        if (vis[adjNode] == false) 
+            topo(adjNode, stk, vis, adj);
+    }
+    stk.push(src);
+}
+
+void dfsTopo(int src, 
+             vector<int> &visi,
+             vector<vector<int>> &adjT) {
+    visi[src] = true;
+
+    for (auto adjNode : adjT[src]) {
+        if (visi[adjNode] == false) {
+            dfsTopo(adjNode, visi, adjT);
+        }
+    }
+    return;
+}
+
+/* ********************************************************************
+13. Dijkistra's Algo
+*********************************************************************** */
+// find the shortest distance of all the vertices from the source vertex src,
+
+vector<int> dijkstra(int V, 
+                     vector<vector<int>> &edges, 
+                     int src) 
+{
+    vector<pair<int, int>> adj[V];
+    for (int i = 0; i < edges.size(); i++) {
+        int u = edges[i][0];
+        int v = edges[i][1];
+        int wt = edges[i][2];
+        adj[u].push_back({v, wt});
+        adj[v].push_back({u, wt});
+    }
+
+    vector<int> dist(V, INT_MAX);
+
+    priority_queue<pair<int, int>,
+                   vector<pair<int, int>>,
+                   greater<pair<int, int>>> pq;
+
+    pq.push({0, src});
+    dist[src] = 0;
+
+    while (!pq.empty()) {
+        int nodeWt = pq.top().first;
+        int node = pq.top().second;
+        pq.pop();
+
+        for (auto it : adj[node]) {
+            int adjNode = it.first;
+            int edgeWt = it.second;
+
+            if (nodeWt + edgeWt < dist[adjNode]) {
+                dist[adjNode] = nodeWt + edgeWt;
+                pq.push({nodeWt + edgeWt, adjNode});
+            }
+        }
+    }
+
+    return dist;
+}
+
+
+/* ********************************************************************
+13. Bellman-Ford Algo
+*********************************************************************** */
+// Intution : Relaxation
+
+vector<int> bellmanFord(int V, vector<vector<int>>& edges, int src) {
+    
+    // Code here
+    vector<int> dis(V, 1e8);
+    dis[src]=0;
+    
+    for(int i=0; i<V-1; i++) {
+        for(auto edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
+            
+            if(dis[u]!=1e8 && dis[u]+w < dis[v])
+                dis[v] = dis[u]+w;
+        }
+    }
+    
+    for(auto edge : edges) {
+        int u = edge[0];
+        int v = edge[1];
+        int w = edge[2];
+            
+        if(dis[u]!=1e8 && dis[u]+w < dis[v])
+            return {-1};
+    }
+        
+    return dis;
+}
+
+/* ********************************************************************
+14. Floyd Warshall Algorithm
+*********************************************************************** */
+
+void floydWarshall(vector<vector<int>> &dist) {
+        
+    int n = dist.size();
+        
+    for(int k=0; k<n; k++) {
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++) {
+                
+                if(dist[i][k]!=1e8 && dist[k][j]!=1e8)
+                    dist[i][j] = min( dist[i][k]+dist[k][j],
+                                      dist[i][j]);
+            }
+        }
+    }
+    
+}
+/* ********************************************************************
+15. Minimum Spanning Tree - PRIMS
+*********************************************************************** */
+
+//  0 --2--- 1
+//   \      /
+//   1\    /1
+//     \  /
+//      2
+
+//
+
+int spanningTree(int V, vector<vector<int>> adj[]) {
+        
+    // Declare
+    int sum=0;
+    vector<bool> vis(V, false);
+    priority_queue< pair<int, int>,
+                    vector<pair<int, int>>,
+                    greater<pair<int, int>>
+                   > q;
+                   
+    // Initialization
+    q.push({0, 0});
+    
+    //logic
+    while(!q.empty())
+    {
+        int node = q.top().second;
+        int nodeWt = q.top().first;
+        q.pop();
+        
+        if(vis[node]==false) {
+            
+            vis[node]=true;
+            sum += nodeWt;
+            
+            for(auto it : adj[node]) {
+                
+                int adjNode = it[0];
+                int adjWt   = it[1];
+                
+                if(vis[adjNode]==false) {
+                    q.push({adjWt, adjNode});
+                }
+            }
+        }
+    }
+    
+    //return val
+    return sum;
+    
+}

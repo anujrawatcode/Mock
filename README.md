@@ -97,4 +97,13 @@ Source : Interviews
 
 11. [Bipartite Graph](https://leetcode.com/problems/is-graph-bipartite/description/)
 
+12. [Strongly Connected Component - Kosaraju](https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/0)
+
+13. [Dijkstra's Algorithm](https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1)
+
+14. [Bellman-Ford](https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1)
+
+15. [Floyd Warshall Algorithm](https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1)
+
+16. [MST Minimum-Spanning-Tree](https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1)
 
