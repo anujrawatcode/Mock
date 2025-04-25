@@ -1,4 +1,4 @@
-# Mock (20 April)
+# Mock (01 May)
 
 ### Linked List
 
@@ -69,9 +69,21 @@ Source : Interviews
 
 29. [Maximum Twin Sum of a Linked List](https://leetcode.com/discuss/post/2024323/amazon-oa-sum-of-subarray-linkedlist-by-99dti/)
 
-30. [Sorted Linked List to complete BST](https://leetcode.com/discuss/post/2682309/intuit-online-sorted-linked-list-to-comp-d4bu/)
+30. [Sorted Linked List to complete BST](https://leetcode.com/discuss/post/2682309/intuit-online-sorted-linked-list-to-comp-d4bu/) 
 
+### Greedy Algorithms
 
+1. [N meetings in one room](https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1)
+
+2. [Minimum Platforms](https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1)
+
+3. [Job sequencing Problem](https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1) TLE
+
+4. [Fractional Knapsack Problem](https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1)
+
+5. [Minimum number of Coins](https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1)
+
+6. [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 
 ### Graph
 
@@ -107,3 +119,28 @@ Source : Interviews
 
 16. [MST Minimum-Spanning-Tree](https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1)
 
+### Binary Search Tree
+
+1. [Populate Next Right pointers of Tree]()
+
+2. [Search given Key in BST]()
+
+3. [Construct BST from given keys]()
+
+4. [Construct a BST from a preorder traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/)
+
+5. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
+
+6. [Find LCA of two nodes in BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)
+
+7. [Find the inorder predecessor/successor of a given Key in BST.]()
+
+8. [Floor of BST](https://www.geeksforgeeks.org/problems/floor-in-bst/1)
+
+9. [Ceil of BST](https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1)
+
+10. [Kth smallest element in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
+
+11. [Kth largest element in BST](https://www.geeksforgeeks.org/problems/kth-largest-element-in-bst/1)
+
+12. []()
