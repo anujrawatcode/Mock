@@ -143,4 +143,10 @@ Source : Interviews
 
 11. [Kth largest element in BST](https://www.geeksforgeeks.org/problems/kth-largest-element-in-bst/1)
 
-12. []()
+12. [Find a pair with a given sum in BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/)
+
+13. [BST iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/)
+
+14. [Size of the largest BST in a Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/)
+
+15. [Serialize and deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
