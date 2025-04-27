@@ -85,6 +85,29 @@ Source : Interviews
 
 6. [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 
+### Recursion
+
+1. [Subset Sum - I](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1)
+
+2. [Subset Sum - II](https://leetcode.com/problems/subsets-ii/)
+
+3. [Combination Sum](https://leetcode.com/problems/combination-sum/description/)
+
+4. [Palindrome Partition](https://leetcode.com/problems/palindrome-partitioning/description/)
+
+5. [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/)
+
+### Backtracking
+
+1. [Permutations](https://leetcode.com/problems/permutations/)
+
+2. [N-Queen](https://leetcode.com/problems/n-queens/description/)
+
+3. [Sudoku Solver]()
+
+4. [Rat in Maze]()
+
+
 ### Binary Search Tree
 
 1. [Populate Next Right pointers of Tree]()
